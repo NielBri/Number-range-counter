@@ -4,7 +4,7 @@ numbers = []
 while True:
     # Number input
     try:
-        num = input("Please input a number from 1-50 (press ENTER to finish process): ")
+        num = input("Please input a number from 1-50 (press again ENTER to finish process): ")
         if num == "":
             break
         num = float(num)
@@ -24,6 +24,16 @@ range3 = [num for num in numbers if 21 <= num <= 30]
 range4 = [num for num in numbers if 31 <= num <= 40]
 range5 = [num for num in numbers if 41 <= num <= 50]
 
-print(range1)
 # Make a function that counts how many numbers are in each range
+amount_range1 = len(range1)
+amount_range2 = len(range2)
+amount_range3 = len(range3)
+amount_range4 = len(range4)
+amount_range5 = len(range5)
+
 # Print
+print("The amount of numbers from 1-10 are:", amount_range1)
+print("The amount of numbers from 11-20 are:", amount_range2)
+print("The amount of numbers from 21-30 are:", amount_range3)
+print("The amount of numbers from 31-40 are:", amount_range4)
+print("The amount of numbers from 41-50 are:", amount_range5)
