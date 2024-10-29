@@ -4,16 +4,22 @@ numbers = []
 while True:
     # Number input
     try:
-        num = int(input("Please input a number (1-50): "))
-        if 0 < num <= 50:
-            # Breaks the loop that detects a number
+        num = input("Please input a number from 1-50 (press ENTER to finish process): ")
+        if num == "":
             break
+        num = float(num)
+        if 0 < num <= 50:
+            print("Input is within the range. ")
         else:
-            print("Error! Please input a valid number range (1-50)")
+            print("Error. Please input a value within the range")
     except:
-        print("Error! Please input again.")
+        print("Please input a valid number. ")
+
 
 # Put the numbers in an array
+numbers.append(num)
+
+
 # Make a function that separates the numbers in the given ranges
 # Make a function that counts how many numbers are in each range
 # Print
